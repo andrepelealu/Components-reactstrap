@@ -1,9 +1,10 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import Content from '../ContentSection';
+import { Breadcrumb, BreadcrumbItem,Col } from 'reactstrap';
 
 export default function BC(props){
   return (
-    <div>
+    <Col lg="9" md="9">
       <Breadcrumb
       style={{
         background: 'rgba(115, 53, 114, 0.15)',
@@ -13,7 +14,8 @@ export default function BC(props){
         <BreadcrumbItem><a href="#">Library</a></BreadcrumbItem>
         <BreadcrumbItem active>Data</BreadcrumbItem>
       </Breadcrumb>
-    </div>
+      <Content/>
+    </Col>
   );
 };
 
